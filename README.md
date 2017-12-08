@@ -3,12 +3,14 @@ Email: june11084@gamil.com
 
 Project: Beep-Boop
 
-Description: This is the independent Friday project, we are making a a beep poop converter that takes a user input number and prints out a range of numbers from 0 to the chosen number with the following specs:
+Description: This is the independent Friday project, we are making a a beep poop converter that takes a user name and input number and prints out a range of numbers from 0 to the chosen number with the following specs:
 
 Specs:
-1. Numbers that contain a 1 are replaced with "Boop!"
-2. Numbers that contain a 0 are replaced with "Beep!"
-3. Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do   that."
+1. The program must be able to fill an array from index[0] to the input number, each index is equal to the corresponding integer, example if input:5, array=[1,2,3,4,5]  
+2. The program must loop through the array and check if each element is divisible by 3 and not equal to 0, if true, the element is replaced with "I'm sorry," + userNameInput + "I'm afraid I can't do that."
+3. The Program must then loop through each character of the element and replace the elements that contains a "1" with "Boop!", and elements that contains "0" with "Beep!"
+4. The Program can reverse the answer and show only if user chooses.
+5. Each Time the user converts again, reversed answer will be hidden until chosen to show again. 
 
 Setup:
 1. open git terminal in Desktop or other destination.

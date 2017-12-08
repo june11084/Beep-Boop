@@ -4,7 +4,6 @@ var toBeepBoop = function(int,string) {
   for (var i = 0; i<=int; i++){
     range[i] = i;
   }
-  console.log(range)
   for(var j = 0; j<=int; j++ ) {
     if ((range[j] != 0) && (range[j] % 3 == 0)){
       range[j] = "I'm sorry " + name + " I'm afraid I can't do that.";
