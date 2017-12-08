@@ -1,11 +1,21 @@
 var toBeepBoop = function(int,string) {
   var range = [];
   var name = string;
-  for(var i = 0; i<=int; i++ ) {
-    if ((i != 0) && (i % 3 == 0)){
-      range[i] = "I'm sorry " + name + " I'm afraid I can't do that.";
+  for (var i = 0; i<=int; i++){
+    range[i] = i;
+  }
+  console.log(range)
+  for(var index = 0; index<=int; index++ ) {
+    if ((range[index] != 0) && (range[index] % 3 == 0)){
+      range[index] = "I'm sorry " + name + " I'm afraid I can't do that.";
     }
-    for (index = 0; index <= range[i].toString().length; index++)
+    for (index = 0; index <= range[index].toString().length; index++){
+      if (range[index].toString().charAt(index).match("1")) {
+        range[index]="Boop";
+      } else if (range[index].toString().charAt(index).match("0")) {
+        range[index]="Beep";
+      }
+    }
 
 
 
