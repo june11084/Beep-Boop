@@ -4,3 +4,14 @@
 #original {
   display: none;
 }
+h2 {
+  font-family: monospace;
+}
+.jumbotron {
+  padding-bottom: 50px;
+  margin: 2%;
+  padding: 2%;
+}
+body {
+  background-color: #95b7b7;
+}
