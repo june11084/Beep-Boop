@@ -27,8 +27,10 @@ $(document).ready(function() {
     var name = $("#nameInput").val();
     var number = parseInt($("#numberInput").val());
     var numberArray = toBeepBoop(number,name);
-    $("#result").text(numberArray);
     var reversed = numberArray.split(", ").reverse().join(", ")
-    $("#reversedResult").text(reversed).hide();
+    $("#originalResult").text(numberArray);
+    $("#reversedResult").text(reversed);
+    $("#original").show()
+    $("#reversed").hide()
   });
 });
