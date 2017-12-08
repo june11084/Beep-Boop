@@ -18,10 +18,12 @@
           <label for="numberInput">Please enter the sent you would like to convert to BeepBoop</label>
           <input id="numberInput" class="form-control" type="text">
         </div>
-        <button class = "btn btn-primary" type="submit">Count</button>
+        <button class = "btn btn-primary" type="submit">Convert!</button>
+        <button class = "btn btn-success" type ="button" onClick=$("#reversedResult").show()>Reversed</button>
         <input type="button" class="btn btn-warning" value="Reset" onClick="location.href=location.href">
       </form>
       <div id ="result"></div>
+      <div id ="reversedResult"></div>
     </div>
   </body>
 </html>

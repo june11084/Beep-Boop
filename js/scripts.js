@@ -5,39 +5,30 @@ var toBeepBoop = function(int,string) {
     range[i] = i;
   }
   console.log(range)
-  for(var index = 0; index<=int; index++ ) {
-    if ((range[index] != 0) && (range[index] % 3 == 0)){
-      range[index] = "I'm sorry " + name + " I'm afraid I can't do that.";
+  for(var j = 0; j<=int; j++ ) {
+    if ((range[j] != 0) && (range[j] % 3 == 0)){
+      range[j] = "I'm sorry " + name + " I'm afraid I can't do that.";
     }
-    for (index = 0; index <= range[index].toString().length; index++){
-      if (range[index].toString().charAt(index).match("1")) {
-        range[index]="Boop";
-      } else if (range[index].toString().charAt(index).match("0")) {
-        range[index]="Beep";
+    for (index = 0; index <= range[j].toString().length; index++){
+      if (range[j].toString().charAt(index).match("1")) {
+        range[j]="Boop";
+      } else if (range[j].toString().charAt(index).match("0")) {
+        range[j]="Beep";
       }
     }
-
-
-
   }
-
-  return range;
-  return name;
-
+  var result = range.join(", ");
+  return result;
 };
-
-
-
 
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
     var name = $("#nameInput").val();
     var number = parseInt($("#numberInput").val());
-
-
     var numberArray = toBeepBoop(number,name);
     $("#result").text(numberArray);
-
+    var reversed = numberArray.split(", ").reverse().join(", ")
+    $("#reversedResult").text(reversed).hide();
   });
 });
