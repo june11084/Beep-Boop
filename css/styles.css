@@ -1,17 +1,40 @@
 #reversed {
   display: none;
 }
+#reversed h3 {
+  color: #5cb85c;
+}
+#reversed p {
+  color: #5cb85c;
+}
 #original {
   display: none;
 }
+#original h3 {
+  color: #337ab7;
+}
+#original p {
+  color: #337ab7;
+}
+
+
 h2 {
-  font-family: monospace;
+  font-family: fantasy;
+  color: #005cb3;
 }
 .jumbotron {
   padding-bottom: 50px;
   margin: 2%;
   padding: 2%;
 }
+.jumbotron p {
+  text-overflow: clip;
+  font-family: cursive;:
+}
 body {
   background-color: #95b7b7;
+}
+#formOne label {
+  font-family: cursive;
+  font-size: 16px;
 }
